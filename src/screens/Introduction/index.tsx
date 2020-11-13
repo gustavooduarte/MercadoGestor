@@ -1,8 +1,8 @@
 import React from "react";
-import { Image } from 'react-native';
+import { Image } from "react-native";
 
-import backgroundIntroductionScreen from '../../../assets/backgroundIntroductionScreen.png';
-
+import backgroundIntroductionScreen from "../../../assets/backgroundIntroductionScreen.png";
+import { useNavigation } from "@react-navigation/native";
 import {
   Container,
   ContainerButton,
@@ -14,19 +14,17 @@ import {
 import NavigationButton from "../../components/NavigationButton";
 
 const Introduction: React.FC = () => {
+  const navigation = useNavigation();
   return (
     <Container>
       <ContainerTitle>
         <Title>Vamos te conhecer um pouco...</Title>
       </ContainerTitle>
-      
-
       <ContainerImage>
-        <Image source = {backgroundIntroductionScreen} /> 
+        <Image source={backgroundIntroductionScreen} />
       </ContainerImage>
-
-      <ContainerButton>  
-        <NavigationButton onPress={() => console.log("Próxima tela")} />
+      <ContainerButton>
+        <NavigationButton onPress={() => navigation.navigate("Question1")} />
       </ContainerButton>
     </Container>
   );
