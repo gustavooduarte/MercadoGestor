@@ -9,6 +9,7 @@ import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
 import Question3Screen from "../screens/Question3";
 // import MakingScreen from "../screens/Making";
+import Question4Screen from "../screens/Question4";
 
 import { headerBackgroundTopStacks } from "./styles";
 
