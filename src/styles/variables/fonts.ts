@@ -1,5 +1,5 @@
 export default {
-  bigger: 28,
+  bigger: 25,
   big: 20,
   regular: 16,
   fontSearchInput: 14,

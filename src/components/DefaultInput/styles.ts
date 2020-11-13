@@ -27,5 +27,5 @@ export const Container = styled.View`
 export const TextLabel = styled.Text`
   color: ${colors.black};
   font-size: ${fonts.fontSearchInput}px;
-  margin-left: 10px;
+  margin-left: ${metrics.DistLeft}px;
 `;

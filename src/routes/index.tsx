@@ -6,7 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import StartScreen from "../screens/Start";
 import IntroductionScreen from "../screens/Introduction";
-
+import Question1Screen from "../screens/Question1";
 import { headerBackgroundTopStacks } from "./styles";
 
 const MainStack = createStackNavigator();
@@ -33,6 +33,15 @@ export default function Routes() {
             ...headerBackgroundTopStacks,
           }}
           component={IntroductionScreen}
+        />
+        {/* Question1Screen */}
+        <MainStack.Screen
+          name="Question1"
+          options={{
+            title: "Dívidas?",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question1Screen}
         />
       </MainStack.Navigator>
     </NavigationContainer>
