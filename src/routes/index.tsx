@@ -10,6 +10,7 @@ import Question1Screen from "../screens/Question1";
 import Question3Screen from "../screens/Question3";
 import Question5Screen from "../screens/Question5";
 import Question7Screen from "../screens/Question7";
+import Question8Screen from "../screens/Question8";
 // import MakingScreen from "../screens/Making";
 import Question4Screen from "../screens/Question4";
 import Question6Screen from "../screens/Question6";
@@ -90,7 +91,7 @@ export default function Routes() {
           }}
           component={Question5Screen}
         />
-        
+
         {/* Question6Screen */}
         <MainStack.Screen
           name="Question6"
@@ -100,7 +101,6 @@ export default function Routes() {
           }}
           component={Question6Screen}
         />
-        
         {/* Question7Screen */}
         <MainStack.Screen
           name="Question7"
@@ -109,6 +109,15 @@ export default function Routes() {
             ...headerBackgroundTopStacks,
           }}
           component={Question7Screen}
+        />
+        {/* Question8Screen */}
+        <MainStack.Screen
+          name="Question8"
+          options={{
+            title: "Objetivos Financeiros",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question8Screen}
         />
       </MainStack.Navigator>
     </NavigationContainer>
