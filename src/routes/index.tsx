@@ -8,6 +8,7 @@ import StartScreen from "../screens/Start";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
 import Question3Screen from "../screens/Question3";
+import Question5Screen from "../screens/Question5";
 // import MakingScreen from "../screens/Making";
 import Question4Screen from "../screens/Question4";
 
@@ -57,6 +58,16 @@ export default function Routes() {
             ...headerBackgroundTopStacks,
           }}
           component={Question3Screen}
+        />
+
+        {/* Question5Screen */}
+        <MainStack.Screen
+          name="Question5"
+          options={{
+            title: "Contas Não Essenciais",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question5Screen}
         />
       </MainStack.Navigator>
     </NavigationContainer>
