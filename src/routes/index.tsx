@@ -7,6 +7,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import StartScreen from "../screens/Start";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
+import Question4Screen from "../screens/Question4";
 import MakingScreen from "../screens/Making";
 
 import { headerBackgroundTopStacks } from "./styles";
@@ -24,7 +25,7 @@ export default function Routes() {
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={MakingScreen}
+          component={Question4Screen}
         />
 
         {/* IntroductionScreen */}
