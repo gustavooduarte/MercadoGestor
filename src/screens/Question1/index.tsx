@@ -27,7 +27,7 @@ const Question1: React.FC = () => {
         }}
       />
       <ContainerButton>
-        <NavigationButton onPress={() => navigation.navigate("Introduction")} />
+        <NavigationButton onPress={() => navigation.navigate("Question2")} />
       </ContainerButton>
     </Container>
   );

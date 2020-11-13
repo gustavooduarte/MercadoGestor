@@ -5,14 +5,8 @@ import { colors, fonts, metrics } from "../../styles";
 export const Container = styled.View`
   flex: 1;
   padding: ${metrics.padding}px;
-  justify-content: center;
   background-color: ${colors.white};
   width: 100%;
-`;
-
-export const ContainerTitle = styled.View`
-  justify-content: center;
-  bottom: 60px;
 `;
 
 export const ContainerButton = styled.View`
@@ -22,10 +16,4 @@ export const ContainerButton = styled.View`
   bottom: ${metrics.padding}px;
   right: ${metrics.padding}px;
   width: 30%;
-`;
-
-export const Title = styled.Text`
-  font-size: ${fonts.bigger}px;
-  color: ${colors.blackFont};
-  text-align: center;
 `;

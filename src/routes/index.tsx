@@ -12,6 +12,7 @@ import Question5Screen from "../screens/Question5";
 // import MakingScreen from "../screens/Making";
 import Question4Screen from "../screens/Question4";
 
+import Question2Screen from "../screens/Question2";
 import { headerBackgroundTopStacks } from "./styles";
 
 const MainStack = createStackNavigator();
@@ -44,12 +45,20 @@ export default function Routes() {
         <MainStack.Screen
           name="Question1"
           options={{
-            title: "Dívidas?",
+            title: "Salário?",
             ...headerBackgroundTopStacks,
           }}
           component={Question1Screen}
         />
-
+        {/* Question2Screen */}
+        <MainStack.Screen
+          name="Question2"
+          options={{
+            title: "Dívidas?",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question2Screen}
+        />
         {/* Question3Screen */}
         <MainStack.Screen
           name="Question3"
