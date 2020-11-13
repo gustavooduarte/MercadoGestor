@@ -7,7 +7,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import StartScreen from "../screens/Start";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
-import MakingScreen from "../screens/Making";
+import Question3Screen from "../screens/Question3";
+// import MakingScreen from "../screens/Making";
 
 import { headerBackgroundTopStacks } from "./styles";
 
@@ -24,7 +25,7 @@ export default function Routes() {
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={MakingScreen}
+          component={Question3Screen}
         />
 
         {/* IntroductionScreen */}
@@ -36,6 +37,7 @@ export default function Routes() {
           }}
           component={IntroductionScreen}
         />
+
         {/* Question1Screen */}
         <MainStack.Screen
           name="Question1"
@@ -44,6 +46,16 @@ export default function Routes() {
             ...headerBackgroundTopStacks,
           }}
           component={Question1Screen}
+        />
+
+        {/* Question3Screen */}
+        <MainStack.Screen
+          name="Question3"
+          options={{
+            title: "Contas Essenciais",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question3Screen}
         />
       </MainStack.Navigator>
     </NavigationContainer>
