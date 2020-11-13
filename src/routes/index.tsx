@@ -99,7 +99,8 @@ export default function Routes() {
             ...headerBackgroundTopStacks,
           }}
           component={Question6Screen}
-
+        />
+        
         {/* Question7Screen */}
         <MainStack.Screen
           name="Question7"
