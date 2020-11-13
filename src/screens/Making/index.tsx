@@ -4,34 +4,13 @@ import { Container } from "./styles";
 
 import DefaultCheckList from "../../components/DefaultCheckList";
 
-const DATA = [
-  {
-    id: "1",
-    itemLabel: "Teste 01",
-    isSelected: false,
-  },
-  {
-    id: "2",
-    itemLabel: "Teste 02",
-    isSelected: false,
-  },
-  {
-    id: "3",
-    itemLabel: "Teste 03",
-    isSelected: false,
-  },
-  {
-    id: "4",
-    itemLabel: "Teste 04",
-    isSelected: false,
-  },
-];
-
 const Start: React.FC = () => {
   const [isSelected, setIsSelected] = useState(false);
   const [isSelected1, setIsSelected1] = useState(false);
   const [isSelected2, setIsSelected2] = useState(false);
   const [isSelected3, setIsSelected3] = useState(false);
+  const [isSelected4, setIsSelected4] = useState(false);
+  const [isSelected5, setIsSelected5] = useState(false);
 
   return (
     <Container>
@@ -54,6 +33,16 @@ const Start: React.FC = () => {
         label="TESTE3"
         onPress={() => setIsSelected3(!isSelected3)}
         valueSelected={isSelected3}
+      />
+      <DefaultCheckList
+        label="TESTE3"
+        onPress={() => setIsSelected4(!isSelected4)}
+        valueSelected={isSelected4}
+      />
+      <DefaultCheckList
+        label="TESTE3"
+        onPress={() => setIsSelected5(!isSelected5)}
+        valueSelected={isSelected5}
       />
     </Container>
   );

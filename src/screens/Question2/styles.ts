@@ -7,13 +7,21 @@ export const Container = styled.View`
   padding: ${metrics.padding}px;
   background-color: ${colors.white};
   width: 100%;
+  min-height: ${metrics.screenHeight}px;
 `;
 
 export const ContainerButton = styled.View`
-  justify-content: center;
   background-color: ${colors.white};
-  position: absolute;
-  bottom: ${metrics.padding}px;
-  right: ${metrics.padding}px;
   width: 30%;
+`;
+
+export const Container2 = styled.View`
+  width: 100%;
+`;
+export const Container4 = styled.View`
+  width: 100%;
+  align-items: flex-end;
+`;
+export const Container3 = styled.View`
+  margin-left: ${metrics.DistLeft}px;
 `;

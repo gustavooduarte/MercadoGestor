@@ -2,14 +2,15 @@ import React, { useState, forwardRef } from "react";
 import { InputProps } from "react-native-elements";
 import { colors } from "../../styles";
 
-import { Container, TextLabel, ContainerInput } from "./styles";
+import { Container, TextLabel, ContainerInput, Text } from "./styles";
 
 interface IProps extends InputProps {
-  label: string;
+  label?: string;
+  leftI?: string;
 }
 
 const DefaultInput: React.ForwardRefRenderFunction<unknown, IProps> = (
-  { label, ...rest },
+  { label, leftI, ...rest },
   ref
 ) => {
   const [isFocus, setIsFocus] = useState(false);
@@ -21,6 +22,8 @@ const DefaultInput: React.ForwardRefRenderFunction<unknown, IProps> = (
         {...rest}
         bColor={isFocus ? colors.primary : undefined}
         onFocus={() => setIsFocus(true)}
+        onBlur={() => setIsFocus(false)}
+        leftIcon={leftI ? <Text>{leftI}</Text> : null}
       />
     </Container>
   );
