@@ -25,7 +25,7 @@ export default function Routes() {
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={Question3Screen}
+          component={StartScreen}
         />
 
         {/* IntroductionScreen */}
