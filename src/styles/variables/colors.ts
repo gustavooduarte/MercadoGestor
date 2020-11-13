@@ -1,0 +1,16 @@
+export default {
+  primary: "#009FE3",
+  blackFont: "#2F2F2F",
+  secondary: "#E4E5E0",
+  white: "#FFFFFF",
+  black: "#000",
+  darkRed: "#D21404",
+  lightGray: "#CCC7C7",
+  transparent: "rgba(0, 0, 0, 0)",
+  Gray: "#7B7979",
+  blue: "#0AA5FF",
+  blueCard: "#00A1FF",
+  greenCard: "#36FF6D",
+  yellowCard: "#FFC756",
+  redCard: "#FF0000",
+};
