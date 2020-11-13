@@ -12,6 +12,7 @@ import Question5Screen from "../screens/Question5";
 // import MakingScreen from "../screens/Making";
 import Question4Screen from "../screens/Question4";
 import Question6Screen from "../screens/Question6";
+import FinishScreen from "../screens/Finish";
 
 import Question2Screen from "../screens/Question2";
 import { headerBackgroundTopStacks } from "./styles";
@@ -29,7 +30,7 @@ export default function Routes() {
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={StartScreen}
+          component={FinishScreen}
         />
 
         {/* IntroductionScreen */}
@@ -89,7 +90,7 @@ export default function Routes() {
           }}
           component={Question5Screen}
         />
-        
+
         {/* Question6Screen */}
         <MainStack.Screen
           name="Question6"
@@ -98,6 +99,16 @@ export default function Routes() {
             ...headerBackgroundTopStacks,
           }}
           component={Question6Screen}
+        />
+
+        {/* FinishScreen */}
+        <MainStack.Screen
+          name="Finish"
+          options={{
+            title: "Gestão Financeira",
+            ...headerBackgroundTopStacks,
+          }}
+          component={FinishScreen}
         />
       </MainStack.Navigator>
     </NavigationContainer>
