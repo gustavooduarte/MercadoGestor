@@ -4,7 +4,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import HomeScreen from "../screens/Home";
+import StartScreen from "../screens/Start";
 
 import { headerBackgroundTopStacks } from "./styles";
 
@@ -14,14 +14,14 @@ export default function Routes() {
   return (
     <NavigationContainer>
       <MainStack.Navigator>
-        {/* HomeScreen */}
+        {/* StartScreen */}
         <MainStack.Screen
-          name="Home"
+          name="Start"
           options={{
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={HomeScreen}
+          component={StartScreen}
         />
       </MainStack.Navigator>
     </NavigationContainer>

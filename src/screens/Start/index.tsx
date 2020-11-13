@@ -3,16 +3,24 @@ import React from "react";
 import {
   Container,
   ContainerButton,
+  ContainerIcon,
   ContainerInfo,
   TextLabel,
+  TextBackLabel,
   TextInfo,
 } from "./styles";
 
 import DefaultButton from "../../components/DefaultButton";
 
-const Home: React.FC = () => {
+import graphIcon from "../../../assets/graph.png";
+import { Image } from "react-native";
+
+const Start: React.FC = () => {
   return (
     <Container>
+      <ContainerIcon>
+        <Image source={graphIcon} />
+      </ContainerIcon>
       <ContainerInfo>
         <TextLabel>Meu Gestor</TextLabel>
         <TextLabel>Financeiro</TextLabel>
@@ -23,9 +31,10 @@ const Home: React.FC = () => {
       </ContainerInfo>
       <ContainerButton>
         <DefaultButton label="Bora Começar!" />
+        <TextBackLabel>Voltar ao início</TextBackLabel>
       </ContainerButton>
     </Container>
   );
 };
 
-export default Home;
+export default Start;

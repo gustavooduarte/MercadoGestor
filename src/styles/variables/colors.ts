@@ -1,11 +1,11 @@
 export default {
   primary: "#009FE3",
   blackFont: "#2F2F2F",
-  secondary: "#E4E5E0",
+  secondary: "#DEE1E6",
   white: "#FFFFFF",
   black: "#000",
   darkRed: "#D21404",
-  lightGray: "#CCC7C7",
+  lightGray: "#9CA9BA",
   transparent: "rgba(0, 0, 0, 0)",
   Gray: "#7B7979",
   blue: "#0AA5FF",
