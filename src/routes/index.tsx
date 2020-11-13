@@ -60,6 +60,16 @@ export default function Routes() {
           component={Question3Screen}
         />
 
+        {/* Question4Screen */}
+        <MainStack.Screen
+          name="Question4"
+          options={{
+            title: "Contas Essenciais",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question4Screen}
+        />
+
         {/* Question5Screen */}
         <MainStack.Screen
           name="Question5"
