@@ -15,6 +15,7 @@ export const Container2 = styled.View`
   flex-direction: row;
   margin-bottom: 15px;
   margin-left: ${metrics.DistLeft}px;
+  align-items: center;
 `;
 export const CheckContainer = styled(Ripple)``;
 
@@ -33,6 +34,5 @@ export const TextTitle = styled.Text<ITitle>`
 export const Text = styled.Text`
   color: ${colors.black};
   font-size: ${fonts.regular}px;
-  margin-top: 3px;
   margin-left: 10px;
 `;

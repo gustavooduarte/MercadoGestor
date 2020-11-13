@@ -21,19 +21,11 @@ export const ContainerButton = styled.View`
   position: absolute;
   bottom: ${metrics.padding}px;
   right: ${metrics.padding}px;
-  width: 30%
+  width: 30%;
 `;
-
-export const ContainerImage = styled.View`
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-`;
-
 
 export const Title = styled.Text`
   font-size: ${fonts.bigger}px;
   color: ${colors.blackFont};
   text-align: center;
 `;
-
