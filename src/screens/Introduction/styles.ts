@@ -10,6 +10,11 @@ export const Container = styled.View`
   width: 100%;
 `;
 
+export const ContainerTitle = styled.View`
+  justify-content: center;
+  bottom: 60px;
+`;
+
 export const ContainerButton = styled.View`
   justify-content: center;
   background-color: ${colors.white};
@@ -19,7 +24,10 @@ export const ContainerButton = styled.View`
   width: 30%
 `;
 
-export const ContainerImg = styled.View`
+export const ContainerImage = styled.View`
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 `;
 
 
