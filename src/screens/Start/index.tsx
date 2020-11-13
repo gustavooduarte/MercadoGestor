@@ -14,8 +14,11 @@ import DefaultButton from "../../components/DefaultButton";
 
 import graphIcon from "../../../assets/graph.png";
 import { Image } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 
-const Start: React.FC = () => {
+const Start: React.FC = ( ) => {
+  const navigation = useNavigation();
+
   return (
     <Container>
       <ContainerIcon>
@@ -30,7 +33,7 @@ const Start: React.FC = () => {
         </TextInfo>
       </ContainerInfo>
       <ContainerButton>
-        <DefaultButton label="Bora Começar!" />
+        <DefaultButton label="Bora Começar!" onPress={() => { navigation.navigate('Introduction')}} />
         <TextBackLabel>Voltar ao início</TextBackLabel>
       </ContainerButton>
     </Container>
