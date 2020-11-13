@@ -7,7 +7,7 @@ interface IProps {
   label: string;
 }
 
-const DefaultButton: React.FC<IProps> = ({ label, ...rest }) => {
+const DefaultInput: React.FC<IProps> = ({ label, ...rest }) => {
   const [isFocus, setIsFocus] = useState(false);
   return (
     <Container>
@@ -20,4 +20,4 @@ const DefaultButton: React.FC<IProps> = ({ label, ...rest }) => {
     </Container>
   );
 };
-export default DefaultButton;
+export default DefaultInput;
