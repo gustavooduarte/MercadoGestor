@@ -5,8 +5,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import StartScreen from "../screens/Start";
+<<<<<<< HEAD
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
+=======
+import MakingScreen from "../screens/Making";
+
+>>>>>>> Adiciona checkList
 import { headerBackgroundTopStacks } from "./styles";
 
 const MainStack = createStackNavigator();
@@ -22,7 +27,7 @@ export default function Routes() {
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={StartScreen}
+          component={MakingScreen}
         />
 
         {/* IntroductionScreen */}
