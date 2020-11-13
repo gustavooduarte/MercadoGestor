@@ -119,7 +119,7 @@ const Question2: React.FC = () => {
         <Container4>
           <ContainerButton>
             <NavigationButton
-              onPress={() => navigation.navigate("Introduction")}
+              onPress={() => navigation.navigate("Question3")}
             />
           </ContainerButton>
         </Container4>

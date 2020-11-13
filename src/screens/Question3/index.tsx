@@ -68,7 +68,7 @@ const Question3: React.FC = () => {
         valueSelected={check9}
       />
       <ContainerButton>
-        <NavigationButton onPress={() => navigation.navigate("Introduction")} />
+        <NavigationButton onPress={() => navigation.navigate("Question8")} />
       </ContainerButton>
     </Container>
   );
