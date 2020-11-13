@@ -10,6 +10,7 @@ import Question1Screen from "../screens/Question1";
 import Question3Screen from "../screens/Question3";
 // import MakingScreen from "../screens/Making";
 import Question4Screen from "../screens/Question4";
+import Question6Screen from "../screens/Question6";
 
 import { headerBackgroundTopStacks } from "./styles";
 
@@ -57,6 +58,26 @@ export default function Routes() {
             ...headerBackgroundTopStacks,
           }}
           component={Question3Screen}
+        />
+
+        {/* Question4Screen */}
+        <MainStack.Screen
+          name="Question4"
+          options={{
+            title: "Gestão Financeira",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question4Screen}
+        />
+
+        {/* Question6Screen */}
+        <MainStack.Screen
+          name="Question6"
+          options={{
+            title: "Gestão Financeira",
+            ...headerBackgroundTopStacks,
+          }}
+          component={Question6Screen}
         />
       </MainStack.Navigator>
     </NavigationContainer>

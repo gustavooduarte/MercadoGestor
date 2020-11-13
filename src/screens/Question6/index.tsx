@@ -9,32 +9,34 @@ import DefaultInput from "../../components/DefaultInput";
 
 
 
-const Question2: React.FC = () => {
+const Question5: React.FC = () => {
   const itemsTest = [ 
     { "id": "1",
-      itemLabel: "Aluguel",
+      itemLabel: "Fast Food",
     },
     {
       "id": "2",
-      itemLabel: "Água",
+      itemLabel: "Lazer",
     },
     {
       "id": "3",
-      itemLabel: "Luz",
+      itemLabel: "Roupas",
     },
     {
       "id": "4",
-      itemLabel: "Mercado",
+      itemLabel: "Beleza",
     },
-  ]
+  ];
 
-  const [item1, setItem1] = useState({ itemLabel: "Aluguel", itemValue: "" });
-  const [item2, setItem2] = useState({ itemLabel: "Água", itemValue: "" });
-  const [item3, setItem3] = useState({ itemLabel: "Luz", itemValue: "" });
-  const [item4, setItem4] = useState({ itemLabel: "Mercado", itemValue: "" });
+  const [item1, setItem1] = useState( {itemLabel: "Fast Food", itemValue: ""});
+  const [item2, setItem2] = useState( {itemLabel: "Lazer", itemValue: ""});
+  const [item3, setItem3] = useState( {itemLabel: "Roupas", itemValue: ""});
+  const [item4, setItem4] = useState( {itemLabel: "Beleza", itemValue: ""});
 
   const navigation = useNavigation();
+
   return (
+  
     <Container>
       <ContainerTitle>
         <Title>Me diga a média de cada conta...</Title>
@@ -91,8 +93,7 @@ const Question2: React.FC = () => {
           label: item4.itemLabel,
         }}
       />
-      
-
+    
       <ContainerButton>
         <NavigationButton onPress={() => navigation.navigate("Introduction")} />
       </ContainerButton>
@@ -100,4 +101,4 @@ const Question2: React.FC = () => {
   );
 };
 
-export default Question2;
+export default Question5;
