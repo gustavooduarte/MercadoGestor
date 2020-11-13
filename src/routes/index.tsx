@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import HomeScreen from "../screens/Home";
+import Introduction from "../screens/Introduction";
 
 import { headerBackgroundTopStacks } from "./styles";
 
