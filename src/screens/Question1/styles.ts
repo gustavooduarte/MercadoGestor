@@ -8,6 +8,7 @@ export const Container = styled.View`
   justify-content: center;
   background-color: ${colors.white};
   width: 100%;
+  min-height: ${metrics.screenHeight}px;
 `;
 
 export const ContainerTitle = styled.View`

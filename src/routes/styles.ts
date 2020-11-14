@@ -1,7 +1,6 @@
 import { colors, fonts } from "../styles";
 
 export const headerBackgroundTopStacks: any = {
-  headerTitleAlign: "center",
   headerStyle: {
     backgroundColor: colors.primary,
   },
@@ -9,6 +8,5 @@ export const headerBackgroundTopStacks: any = {
   headerTitleStyle: {
     fontSize: fonts.big,
     color: colors.white,
-    alignSelf: "center",
   },
 };

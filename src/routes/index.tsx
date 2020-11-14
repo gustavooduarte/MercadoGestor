@@ -25,7 +25,6 @@ import Question8Screen from "../screens/Question8";
 import FinishScreen from "../screens/Finish";
 import HomeScreen from "../screens/Home";
 import ProductListScreen from "../screens/ProductList";
-import MakingScreen from "../screens/Making";
 import { headerBackgroundTopStacks } from "./styles";
 import { colors } from "../styles";
 
@@ -96,7 +95,7 @@ export default function Routes() {
         <MainStack.Screen
           name="Start"
           options={{
-            title: "Gestão Financeira",
+            title: "Mercado Gestor",
             ...headerBackgroundTopStacks,
           }}
           component={StartScreen}
@@ -116,7 +115,7 @@ export default function Routes() {
         <MainStack.Screen
           name="Question1"
           options={{
-            title: "Salário?",
+            title: "Média Salarial",
             ...headerBackgroundTopStacks,
           }}
           component={Question1Screen}
@@ -126,7 +125,7 @@ export default function Routes() {
         <MainStack.Screen
           name="Question2"
           options={{
-            title: "Dívidas?",
+            title: "Dívidas",
             ...headerBackgroundTopStacks,
           }}
           component={Question2Screen}
@@ -146,7 +145,7 @@ export default function Routes() {
         <MainStack.Screen
           name="Question4"
           options={{
-            title: "Média de Contas",
+            title: "Média das Contas Essenciais",
             ...headerBackgroundTopStacks,
           }}
           component={Question4Screen}
@@ -166,7 +165,7 @@ export default function Routes() {
         <MainStack.Screen
           name="Question6"
           options={{
-            title: "Média de Contas",
+            title: "Média das Contas Não Essenciais",
             ...headerBackgroundTopStacks,
           }}
           component={Question6Screen}
@@ -196,7 +195,7 @@ export default function Routes() {
         <MainStack.Screen
           name="Finish"
           options={{
-            title: "Finalizando",
+            title: "Finalizado",
             ...headerBackgroundTopStacks,
           }}
           component={FinishScreen}
@@ -206,7 +205,7 @@ export default function Routes() {
         <MainStack.Screen
           name="BottonTabScreens"
           options={{
-            title: "Meu Gestor Financeiro",
+            title: "Mercado Gestor",
             ...headerBackgroundTopStacks,
           }}
           component={BottonTabScreens}
