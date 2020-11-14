@@ -1,50 +1,24 @@
 import React, { useState } from "react";
-
+import { Dimensions } from 'react-native';
 import { Container } from "./styles";
 
-import DefaultCheckList from "../../components/DefaultCheckList";
+import Chart from "../../components/ChartComponent";
 
 const Start: React.FC = () => {
-  const [isSelected, setIsSelected] = useState(false);
-  const [isSelected1, setIsSelected1] = useState(false);
-  const [isSelected2, setIsSelected2] = useState(false);
-  const [isSelected3, setIsSelected3] = useState(false);
-  const [isSelected4, setIsSelected4] = useState(false);
-  const [isSelected5, setIsSelected5] = useState(false);
+  const data = [
+    { name: 'Não Essenciais', population: 31, color: '#F48C37', legendFontColor: '#7F7F7F', legendFontSize: 15 },
+    { name: 'Dívidas', population: 30, color: '#F04946', legendFontColor: '#7F7F7F', legendFontSize: 15 },
+    { name: 'Essenciais', population: 29, color: '#0075CF', legendFontColor: '#7F7F7F', legendFontSize: 15 },
+    { name: 'Guardar', population: 10, color: '#53BB9B', legendFontColor: '#7F7F7F', legendFontSize: 15 }
+  ]
+
+  const screenWidth = Dimensions.get('window').width - 30;
 
   return (
     <Container>
-      <DefaultCheckList
-        label="TESTE"
-        onPress={() => setIsSelected(!isSelected)}
-        valueSelected={isSelected}
-      />
-      <DefaultCheckList
-        label="TESTE1"
-        onPress={() => setIsSelected1(!isSelected1)}
-        valueSelected={isSelected1}
-      />
-      <DefaultCheckList
-        label="TESTE2"
-        onPress={() => setIsSelected2(!isSelected2)}
-        valueSelected={isSelected2}
-      />
-      <DefaultCheckList
-        label="TESTE3"
-        onPress={() => setIsSelected3(!isSelected3)}
-        valueSelected={isSelected3}
-      />
-      <DefaultCheckList
-        label="TESTE3"
-        onPress={() => setIsSelected4(!isSelected4)}
-        valueSelected={isSelected4}
-      />
-      <DefaultCheckList
-        label="TESTE3"
-        onPress={() => setIsSelected5(!isSelected5)}
-        valueSelected={isSelected5}
-      />
+      <Chart data={data} width={screenWidth} />
     </Container>
+    
   );
 };
 

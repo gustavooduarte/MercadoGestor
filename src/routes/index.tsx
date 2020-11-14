@@ -11,7 +11,7 @@ import Question3Screen from "../screens/Question3";
 import Question5Screen from "../screens/Question5";
 import Question7Screen from "../screens/Question7";
 import Question8Screen from "../screens/Question8";
-// import MakingScreen from "../screens/Making";
+import MakingScreen from "../screens/Making";
 import Question4Screen from "../screens/Question4";
 import Question6Screen from "../screens/Question6";
 import FinishScreen from "../screens/Finish";
@@ -33,7 +33,7 @@ export default function Routes() {
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={Start}
+          component={MakingScreen}
         />
 
         {/* IntroductionScreen */}
@@ -121,7 +121,7 @@ export default function Routes() {
           }}
           component={Question8Screen}
         />
-        
+
         {/* FinishScreen */}
         <MainStack.Screen
           name="Finish"
