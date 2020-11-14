@@ -10,6 +10,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
+import StartScreen from "../screens/Start";
+import FinancialReserveScreen from "../screens/FinancialReserve";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
 import Question2Screen from "../screens/Question2";
@@ -55,7 +57,7 @@ function BottonTabScreens() {
             <FontAwesome name="money" size={size} color={color} />
           ),
         }}
-        component={MakingScreen}
+        component={FinancialReserveScreen}
       />
       <TabMain.Screen
         name="Produtos"
