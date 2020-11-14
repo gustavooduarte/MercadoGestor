@@ -56,7 +56,7 @@ const Question7: React.FC = () => {
         <ContainerInfo>
           <TextInfoFooter>
             Juntos vamos fazer um fundo de emergência, para que possa dormir
-            tranquila/a.
+            tranquilo(a).
           </TextInfoFooter>
         </ContainerInfo>
 
