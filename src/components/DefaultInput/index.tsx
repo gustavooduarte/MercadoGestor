@@ -16,7 +16,7 @@ const DefaultInput: React.ForwardRefRenderFunction<unknown, IProps> = (
   const [isFocus, setIsFocus] = useState(false);
   return (
     <Container>
-      <TextLabel>{label}</TextLabel>
+      {label && <TextLabel>{label}</TextLabel>}
       <ContainerInput
         ref={ref}
         {...rest}
