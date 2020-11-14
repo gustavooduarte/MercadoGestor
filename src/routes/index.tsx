@@ -26,7 +26,6 @@ import ProductListScreen from "../screens/ProductList";
 import MakingScreen from "../screens/Making";
 import { headerBackgroundTopStacks } from "./styles";
 import { colors } from "../styles";
-import StartScreen from "../screens/Start";
 
 const TabMain = createBottomTabNavigator();
 
