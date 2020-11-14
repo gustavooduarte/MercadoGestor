@@ -1,7 +1,7 @@
 export default {
   primary: "#009FE3",
   blackFont: "#2F2F2F",
-  secondary: "#DEE1E6",
+  secondary: "#D1D1D1",
   white: "#FFFFFF",
   black: "#000",
   darkRed: "#D21404",

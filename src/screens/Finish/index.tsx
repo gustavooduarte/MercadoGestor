@@ -26,15 +26,19 @@ const Finish: React.FC = () => {
       </ContainerIcon>
       <ContainerInfo>
         <TextLabel>Pronto!</TextLabel>
-        <TextInfo>
-          Seu Perfil está habilitado para uso da
-          aplicação.
-        </TextInfo>
+        <TextInfo>Seu Perfil está habilitado para uso da aplicação.</TextInfo>
       </ContainerInfo>
       <ContainerButton>
         <DefaultButton
           label="Meu Gestor Financeiro"
-          onPress={() => { console.log("Essa é a última tela")}}
+          onPress={() =>
+            navigation.reset({
+              index: 0,
+              routes: [
+                { name: "BottonTabScreens", params: { screen: "Home" } },
+              ],
+            })
+          }
         />
       </ContainerButton>
     </Container>

@@ -1,24 +1,86 @@
 import React from "react";
 
-// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {
+  FontAwesome,
+  FontAwesome5,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons";
+
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import StartScreen from "../screens/Start";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
+import Question2Screen from "../screens/Question2";
 import Question3Screen from "../screens/Question3";
+import Question4Screen from "../screens/Question4";
 import Question5Screen from "../screens/Question5";
+import Question6Screen from "../screens/Question6";
 import Question7Screen from "../screens/Question7";
 import Question8Screen from "../screens/Question8";
-// import MakingScreen from "../screens/Making";
-import Question4Screen from "../screens/Question4";
-import Question6Screen from "../screens/Question6";
 import FinishScreen from "../screens/Finish";
-
-import Question2Screen from "../screens/Question2";
+import MakingScreen from "../screens/Making";
 import { headerBackgroundTopStacks } from "./styles";
-import Start from "../screens/Start";
+import { colors } from "../styles";
+
+const TabMain = createBottomTabNavigator();
+
+function BottonTabScreens() {
+  return (
+    <TabMain.Navigator
+      initialRouteName="Home"
+      tabBarOptions={{
+        inactiveBackgroundColor: colors.primary,
+        activeBackgroundColor: colors.primary,
+        activeTintColor: colors.white,
+        inactiveTintColor: colors.secondary,
+      }}
+    >
+      <TabMain.Screen
+        name="Início"
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="home" size={size} color={color} />
+          ),
+        }}
+        component={MakingScreen}
+      />
+      <TabMain.Screen
+        name="Projeção"
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="money" size={size} color={color} />
+          ),
+        }}
+        component={MakingScreen}
+      />
+      <TabMain.Screen
+        name="Produtos"
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="credit-card-clock-outline"
+              size={size}
+              color={color}
+            />
+          ),
+        }}
+        component={MakingScreen}
+      />
+      <TabMain.Screen
+        name="Reserva"
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome5 name="piggy-bank" size={size} color={color} />
+          ),
+        }}
+        component={MakingScreen}
+      />
+    </TabMain.Navigator>
+  );
+}
 
 const MainStack = createStackNavigator();
 
@@ -33,7 +95,7 @@ export default function Routes() {
             title: "Gestão Financeira",
             ...headerBackgroundTopStacks,
           }}
-          component={Start}
+          component={StartScreen}
         />
 
         {/* IntroductionScreen */}
@@ -55,6 +117,7 @@ export default function Routes() {
           }}
           component={Question1Screen}
         />
+
         {/* Question2Screen */}
         <MainStack.Screen
           name="Question2"
@@ -64,6 +127,7 @@ export default function Routes() {
           }}
           component={Question2Screen}
         />
+
         {/* Question3Screen */}
         <MainStack.Screen
           name="Question3"
@@ -78,7 +142,7 @@ export default function Routes() {
         <MainStack.Screen
           name="Question4"
           options={{
-            title: "Gestão Financeira",
+            title: "Média de Contas",
             ...headerBackgroundTopStacks,
           }}
           component={Question4Screen}
@@ -98,11 +162,12 @@ export default function Routes() {
         <MainStack.Screen
           name="Question6"
           options={{
-            title: "Gestão Financeira",
+            title: "Média de Contas",
             ...headerBackgroundTopStacks,
           }}
           component={Question6Screen}
         />
+
         {/* Question7Screen */}
         <MainStack.Screen
           name="Question7"
@@ -112,6 +177,7 @@ export default function Routes() {
           }}
           component={Question7Screen}
         />
+
         {/* Question8Screen */}
         <MainStack.Screen
           name="Question8"
@@ -121,15 +187,25 @@ export default function Routes() {
           }}
           component={Question8Screen}
         />
-        
+
         {/* FinishScreen */}
         <MainStack.Screen
           name="Finish"
           options={{
-            title: "Gestão Financeira",
+            title: "Finalizando",
             ...headerBackgroundTopStacks,
           }}
           component={FinishScreen}
+        />
+
+        {/* TabNavigation */}
+        <MainStack.Screen
+          name="BottonTabScreens"
+          options={{
+            title: "Meu Gestor Financeiro",
+            ...headerBackgroundTopStacks,
+          }}
+          component={BottonTabScreens}
         />
       </MainStack.Navigator>
     </NavigationContainer>
