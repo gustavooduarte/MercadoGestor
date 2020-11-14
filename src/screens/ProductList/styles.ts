@@ -4,14 +4,27 @@ import { colors, fonts, metrics } from "../../styles";
 
 export const Container = styled.View`
   flex: 1;
-  padding: ${metrics.padding}px;
-  justify-content: center;
-  align-items: center;
-  background-color: ${colors.white};
+  background-color: ${colors.grayBackground};
   width: 100%;
-  padding-bottom: 24px;
+  min-height: ${metrics.screenHeight}px;
 `;
 
+export const ContainerBacground = styled.View`
+  background-color: ${colors.primary};
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  height: 50%;
+`;
+export const ContainerMainInfo = styled.View`
+  background-color: ${colors.white};
+  margin: ${metrics.padding}px;
+  padding: ${metrics.padding}px;
+  border-radius: 16px;
+  justify-content: center;
+  position: absolute;
+  width: 91%;
+`;
 export const ContainerFlat = styled.View.attrs({
   shadowColor: "#000",
   shadowOffset: {
@@ -24,7 +37,7 @@ export const ContainerFlat = styled.View.attrs({
 })`
   border-radius: 25px;
   background-color: ${colors.white};
-  height: 40%;
+  height: 170px;
 `;
 
 interface IImage {
@@ -84,7 +97,6 @@ interface IText {
 export const Text = styled.Text<IText>`
   font-size: ${fonts.regular}px;
   color: ${(props) => props.cl || colors.blackFont};
-  margin-top: 15px;
 `;
 export const ContainerText = styled.View`
   width: 100%;

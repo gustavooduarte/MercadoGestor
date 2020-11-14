@@ -22,24 +22,49 @@ import { useNavigation } from "@react-navigation/native";
 
 const Home: React.FC = () => {
   const data = [
-    { name: 'Não Essenciais', population: 31, color: '#F48C37', legendFontColor: colors.Gray, legendFontSize: fonts.smaller },
-    { name: 'Dívidas', population: 30, color: '#F04946', legendFontColor: colors.Gray, legendFontSize: fonts.smaller },
-    { name: 'Essenciais', population: 29, color: '#0075CF', legendFontColor: colors.Gray, legendFontSize: fonts.smaller },
-    { name: 'Guardar', population: 10, color: '#53BB9B', legendFontColor: colors.Gray, legendFontSize: fonts.smaller }
-  ]
+    {
+      name: "Não Essenciais",
+      population: 31,
+      color: "#F48C37",
+      legendFontColor: colors.Gray,
+      legendFontSize: fonts.smaller,
+    },
+    {
+      name: "Dívidas",
+      population: 30,
+      color: "#F04946",
+      legendFontColor: colors.Gray,
+      legendFontSize: fonts.smaller,
+    },
+    {
+      name: "Essenciais",
+      population: 29,
+      color: "#0075CF",
+      legendFontColor: colors.Gray,
+      legendFontSize: fonts.smaller,
+    },
+    {
+      name: "Guardar",
+      population: 10,
+      color: "#53BB9B",
+      legendFontColor: colors.Gray,
+      legendFontSize: fonts.smaller,
+    },
+  ];
 
-  const screenWidth = Dimensions.get('window').width - 50;
+  const screenWidth = Dimensions.get("window").width - 50;
   const navigation = useNavigation();
   return (
     <ScrollView>
       <Container>
         <ContainerBacground>
           <ContainerMainInfo>
-
             <ContainerFlexStart>
-              <TitleLabel>Aqui está nossa sugestão de gerenciamento para você</TitleLabel>
+              <TitleLabel>
+                Aqui está nossa sugestão de gerenciamento para você
+              </TitleLabel>
             </ContainerFlexStart>
-            
+
             <ContainerFlexStart>
               <LabelInfo>Sugestão para seu salário: </LabelInfo>
             </ContainerFlexStart>
@@ -55,9 +80,10 @@ const Home: React.FC = () => {
               <TitlePrice>R$ 280,00</TitlePrice>
             </ContainerAlignCenter>
             <ContainerFlexStart>
-              <LabelInfo>MERCADO DE PONTOS ACUMULADO GUARDANDO DINHEIRO: 300PTS</LabelInfo>
+              <LabelInfo>
+                MERCADO DE PONTOS ACUMULADO GUARDANDO DINHEIRO: 300PTS
+              </LabelInfo>
             </ContainerFlexStart>
-
           </ContainerMainInfo>
         </ContainerBacground>
       </Container>

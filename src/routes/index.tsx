@@ -12,6 +12,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import StartScreen from "../screens/Start";
 import FinancialReserveScreen from "../screens/FinancialReserve";
+import FinancialProjectionScreen from "../screens/FinancialProjection";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
 import Question2Screen from "../screens/Question2";
@@ -57,7 +58,7 @@ function BottonTabScreens() {
             <FontAwesome name="money" size={size} color={color} />
           ),
         }}
-        component={FinancialReserveScreen}
+        component={FinancialProjectionScreen}
       />
       <TabMain.Screen
         name="Produtos"
