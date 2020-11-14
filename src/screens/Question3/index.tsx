@@ -4,6 +4,7 @@ import { Container, ContainerButton, Title, ContainerTitle } from "./styles";
 
 import NavigationButton from "../../components/NavigationButton";
 import DefaultCheckList from "../../components/DefaultCheckList";
+import DefaultInput from "../../components/DefaultInput";
 import { useNavigation } from "@react-navigation/native";
 
 const Question3: React.FC = () => {
@@ -20,7 +21,7 @@ const Question3: React.FC = () => {
   return (
     <Container>
       <ContainerTitle>
-        <Title>O que compõem suas contas essenciais?</Title>
+        <Title>Quais são suas contas essenciais?</Title>
       </ContainerTitle>
       <DefaultCheckList
         label="Aluguel"
@@ -48,12 +49,12 @@ const Question3: React.FC = () => {
         valueSelected={check5}
       />
       <DefaultCheckList
-        label="Telefone Celular"
+        label="Telefone/Celular"
         onPress={() => setCheck6(!check6)}
         valueSelected={check6}
       />
       <DefaultCheckList
-        label="Escola/Faculdades"
+        label="Escola/Faculdade"
         onPress={() => setCheck7(!check7)}
         valueSelected={check7}
       />
@@ -67,6 +68,7 @@ const Question3: React.FC = () => {
         onPress={() => setCheck9(!check9)}
         valueSelected={check9}
       />
+      {check9 ? <DefaultInput /> : null}
       <ContainerButton>
         <NavigationButton onPress={() => navigation.navigate("Question4")} />
       </ContainerButton>

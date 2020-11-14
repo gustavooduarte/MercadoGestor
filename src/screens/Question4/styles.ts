@@ -8,10 +8,12 @@ export const Container = styled.View`
   justify-content: center;
   background-color: ${colors.white};
   width: 100%;
+  min-height: ${metrics.screenHeight}px;
 `;
 
 export const ContainerTitle = styled.View`
   justify-content: center;
+  bottom: 60px;
 `;
 
 export const ContainerButton = styled.View`
@@ -20,7 +22,7 @@ export const ContainerButton = styled.View`
   position: absolute;
   bottom: ${metrics.padding}px;
   right: ${metrics.padding}px;
-  width: 30%
+  width: 30%;
 `;
 
 export const ContainerImage = styled.View`
@@ -29,10 +31,8 @@ export const ContainerImage = styled.View`
   left: 0px;
 `;
 
-
 export const Title = styled.Text`
   font-size: ${fonts.bigger}px;
   color: ${colors.blackFont};
   text-align: center;
 `;
-

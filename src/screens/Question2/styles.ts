@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-import { colors, fonts, metrics } from "../../styles";
+import { colors, metrics } from "../../styles";
 
 export const Container = styled.View`
   flex: 1;
@@ -22,6 +22,21 @@ export const Container4 = styled.View`
   width: 100%;
   align-items: flex-end;
 `;
-export const Container3 = styled.View`
-  margin-left: ${metrics.DistLeft}px;
+interface IContainer3 {
+  ml?: number;
+}
+export const Container3 = styled.View<IContainer3>`
+  margin-left: ${(props) => props.ml || metrics.DistLeft}px;
+  margin-bottom: 30px;
+`;
+
+export const Container5 = styled.View`
+  flex-direction: row;
+`;
+
+export const Container6 = styled.View`
+  width: 60%;
+`;
+export const Container7 = styled.View`
+  width: 40%;
 `;
