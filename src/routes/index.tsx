@@ -78,7 +78,7 @@ function BottonTabScreens() {
             <FontAwesome5 name="piggy-bank" size={size} color={color} />
           ),
         }}
-        component={MakingScreen}
+        component={FinancialReserveScreen}
       />
     </TabMain.Navigator>
   );
