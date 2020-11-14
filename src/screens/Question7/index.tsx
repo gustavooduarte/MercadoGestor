@@ -61,9 +61,7 @@ const Question7: React.FC = () => {
         </ContainerInfo>
 
         <ContainerButton>
-          <NavigationButton
-            onPress={() => navigation.navigate("Introduction")}
-          />
+          <NavigationButton onPress={() => navigation.navigate("Question8")} />
         </ContainerButton>
       </Container>
     </ScrollView>

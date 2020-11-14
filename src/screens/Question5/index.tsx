@@ -60,7 +60,7 @@ const Question5: React.FC = () => {
       {check6 ? <DefaultInput label="Remover Label" /> : null}
 
       <ContainerButton>
-        <NavigationButton onPress={() => navigation.navigate("Introduction")} />
+        <NavigationButton onPress={() => navigation.navigate("Question6")} />
       </ContainerButton>
     </Container>
   );

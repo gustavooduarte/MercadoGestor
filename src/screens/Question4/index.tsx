@@ -7,26 +7,22 @@ import { Container, ContainerButton, Title, ContainerTitle } from "./styles";
 import NavigationButton from "../../components/NavigationButton";
 import DefaultInput from "../../components/DefaultInput";
 
-
-
 const Question2: React.FC = () => {
-  const itemsTest = [ 
-    { "id": "1",
-      itemLabel: "Aluguel",
-    },
+  const itemsTest = [
+    { id: "1", itemLabel: "Aluguel" },
     {
-      "id": "2",
+      id: "2",
       itemLabel: "Água",
     },
     {
-      "id": "3",
+      id: "3",
       itemLabel: "Luz",
     },
     {
-      "id": "4",
+      id: "4",
       itemLabel: "Mercado",
     },
-  ]
+  ];
 
   const [item1, setItem1] = useState({ itemLabel: "Aluguel", itemValue: "" });
   const [item2, setItem2] = useState({ itemLabel: "Água", itemValue: "" });
@@ -44,7 +40,7 @@ const Question2: React.FC = () => {
         type="money"
         value={item1.itemValue}
         onChangeText={(value) => {
-          const aux = { itemLabel: item1.itemLabel, itemValue: value }
+          const aux = { itemLabel: item1.itemLabel, itemValue: value };
           setItem1(aux);
         }}
         customTextInput={DefaultInput}
@@ -57,7 +53,7 @@ const Question2: React.FC = () => {
         type="money"
         value={item2.itemValue}
         onChangeText={(value) => {
-          const aux = { itemLabel: item2.itemLabel, itemValue: value }
+          const aux = { itemLabel: item2.itemLabel, itemValue: value };
           setItem2(aux);
         }}
         customTextInput={DefaultInput}
@@ -70,7 +66,7 @@ const Question2: React.FC = () => {
         type="money"
         value={item3.itemValue}
         onChangeText={(value) => {
-          const aux = { itemLabel: item3.itemLabel, itemValue: value }
+          const aux = { itemLabel: item3.itemLabel, itemValue: value };
           setItem3(aux);
         }}
         customTextInput={DefaultInput}
@@ -83,7 +79,7 @@ const Question2: React.FC = () => {
         type="money"
         value={item4.itemValue}
         onChangeText={(value) => {
-          const aux = { itemLabel: item4.itemLabel, itemValue: value }
+          const aux = { itemLabel: item4.itemLabel, itemValue: value };
           setItem4(aux);
         }}
         customTextInput={DefaultInput}
@@ -91,10 +87,9 @@ const Question2: React.FC = () => {
           label: item4.itemLabel,
         }}
       />
-      
 
       <ContainerButton>
-        <NavigationButton onPress={() => navigation.navigate("Introduction")} />
+        <NavigationButton onPress={() => navigation.navigate("Question5")} />
       </ContainerButton>
     </Container>
   );

@@ -94,12 +94,10 @@ const Question8: React.FC = () => {
           onPress={() => setCheck12(!check12)}
           valueSelected={check12}
         />
-        {check6 ? <DefaultInput label="Remover Label" /> : null}
+        {check6 ? <DefaultInput /> : null}
 
         <ContainerButton>
-          <NavigationButton
-            onPress={() => navigation.navigate("Introduction")}
-          />
+          <NavigationButton onPress={() => navigation.navigate("Finish")} />
         </ContainerButton>
       </Container>
     </ScrollView>
