@@ -10,7 +10,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import StartScreen from "../screens/Start";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
 import Question2Screen from "../screens/Question2";
@@ -24,6 +23,7 @@ import FinishScreen from "../screens/Finish";
 import MakingScreen from "../screens/Making";
 import { headerBackgroundTopStacks } from "./styles";
 import { colors } from "../styles";
+import StartScreen from "../screens/Start";
 
 const TabMain = createBottomTabNavigator();
 
