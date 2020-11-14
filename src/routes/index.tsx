@@ -20,6 +20,7 @@ import Question6Screen from "../screens/Question6";
 import Question7Screen from "../screens/Question7";
 import Question8Screen from "../screens/Question8";
 import FinishScreen from "../screens/Finish";
+import ProductListScreen from "../screens/ProductList";
 import MakingScreen from "../screens/Making";
 import { headerBackgroundTopStacks } from "./styles";
 import { colors } from "../styles";
@@ -67,7 +68,7 @@ function BottonTabScreens() {
             />
           ),
         }}
-        component={MakingScreen}
+        component={ProductListScreen}
       />
       <TabMain.Screen
         name="Reserva"

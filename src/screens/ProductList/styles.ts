@@ -9,6 +9,7 @@ export const Container = styled.View`
   align-items: center;
   background-color: ${colors.white};
   width: 100%;
+  padding-bottom: 24px;
 `;
 
 export const ContainerFlat = styled.View.attrs({
