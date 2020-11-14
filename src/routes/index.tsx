@@ -10,7 +10,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import StartScreen from "../screens/Start";
 import IntroductionScreen from "../screens/Introduction";
 import Question1Screen from "../screens/Question1";
 import Question2Screen from "../screens/Question2";
@@ -21,9 +20,11 @@ import Question6Screen from "../screens/Question6";
 import Question7Screen from "../screens/Question7";
 import Question8Screen from "../screens/Question8";
 import FinishScreen from "../screens/Finish";
+import ProductListScreen from "../screens/ProductList";
 import MakingScreen from "../screens/Making";
 import { headerBackgroundTopStacks } from "./styles";
 import { colors } from "../styles";
+import StartScreen from "../screens/Start";
 
 const TabMain = createBottomTabNavigator();
 
@@ -67,7 +68,7 @@ function BottonTabScreens() {
             />
           ),
         }}
-        component={MakingScreen}
+        component={ProductListScreen}
       />
       <TabMain.Screen
         name="Reserva"
