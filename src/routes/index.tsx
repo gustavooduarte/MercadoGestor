@@ -22,6 +22,7 @@ import Question6Screen from "../screens/Question6";
 import Question7Screen from "../screens/Question7";
 import Question8Screen from "../screens/Question8";
 import FinishScreen from "../screens/Finish";
+import HomeScreen from "../screens/Home";
 import ProductListScreen from "../screens/ProductList";
 import MakingScreen from "../screens/Making";
 import { headerBackgroundTopStacks } from "./styles";
@@ -47,7 +48,7 @@ function BottonTabScreens() {
             <FontAwesome name="home" size={size} color={color} />
           ),
         }}
-        component={MakingScreen}
+        component={HomeScreen}
       />
       <TabMain.Screen
         name="Projeção"

@@ -13,4 +13,5 @@ export default {
   greenCard: "#36FF6D",
   yellowCard: "#FFC756",
   redCard: "#FF0000",
+  grayBackground: "#E5E5E5",
 };
