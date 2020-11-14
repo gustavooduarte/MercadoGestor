@@ -4,7 +4,7 @@ import { colors, fonts, metrics } from "../../styles";
 
 export const Container = styled.View`
   flex: 1;
-  background-color: ${colors.white};
+  background-color: ${colors.grayBackground};
   width: 100%;
   min-height: ${metrics.screenHeight}px;
 `;
