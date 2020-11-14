@@ -13,7 +13,7 @@ export const Container = styled.View`
 
 export const ContainerTitle = styled.View`
   justify-content: center;
-  bottom: 50px;
+  bottom: 60px;
 `;
 
 export const ContainerButton = styled.View`
