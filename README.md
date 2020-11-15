@@ -53,6 +53,7 @@ expo start
 
 **Igor Mattiolli**
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/igormattiolli)](https://github.com/igormattiolli)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-mattiolli-677a221bb](https://www.linkedin.com/in/igor-mattiolli-677a221bb)
 
 **Leandro Bertoldi**
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/leandrocnb)](https://github.com/leandrocnb)
