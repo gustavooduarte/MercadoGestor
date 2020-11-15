@@ -26,10 +26,12 @@ export const ContainerMainInfo = styled.View`
   position: absolute;
   width: 91%;
 `;
-
-export const ContainerFlexStart = styled.View`
+interface IContainer {
+  mb?: number;
+}
+export const ContainerFlexStart = styled.View<IContainer>`
   align-items: flex-start;
-  margin-bottom: ${metrics.DistBottom}px;
+  margin-bottom: ${(props) => props.mb || metrics.DistBottom}px;
 `;
 
 export const ContainerAlignCenter = styled.View`

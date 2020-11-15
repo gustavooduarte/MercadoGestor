@@ -40,10 +40,10 @@ const FinancialProjection: React.FC = () => {
             <ContainerObjectives>
               <ContainerAlignRow>
                 <LabelInfo>1º Viajar: </LabelInfo>
-                <LabelInfo>R$3.500,00</LabelInfo>
+                <LabelInfo>R$ 3.500,00</LabelInfo>
               </ContainerAlignRow>
             </ContainerObjectives>
-            <ContainerFlexStart>
+            <ContainerFlexStart mb={7}>
               <LabelInfo>Fazendo um empréstimo </LabelInfo>
             </ContainerFlexStart>
             <ContainerObjectives>
@@ -51,10 +51,10 @@ const FinancialProjection: React.FC = () => {
                 <LabelInfo>Duração: 3 anos</LabelInfo>
               </ContainerAlignRow>
               <ContainerAlignRow>
-                <LabelInfo>Total a pagar: R$4.350,00</LabelInfo>
+                <LabelInfo>Total a pagar: R$ 4.350,00</LabelInfo>
               </ContainerAlignRow>
             </ContainerObjectives>
-            <ContainerFlexStart>
+            <ContainerFlexStart mb={7}>
               <LabelInfo>Guardando </LabelInfo>
             </ContainerFlexStart>
             <ContainerObjectives>
@@ -62,7 +62,7 @@ const FinancialProjection: React.FC = () => {
                 <LabelInfo>Duração: 3 anos</LabelInfo>
               </ContainerAlignRow>
               <ContainerAlignRow>
-                <LabelInfo>Total a pagar: R$3.850,00</LabelInfo>
+                <LabelInfo>Total a pagar: R$ 3.850,00</LabelInfo>
               </ContainerAlignRow>
             </ContainerObjectives>
           </ContainerMainInfo>

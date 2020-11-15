@@ -72,7 +72,11 @@ const Question2: React.FC = () => {
                     </Container7>
                   </Container5>
                   <Container3 ml={25}>
-                    <AntDesign name="pluscircleo" size={24} color={colors.blackFont} />
+                    <AntDesign
+                      name="pluscircleo"
+                      size={24}
+                      color={colors.blackFont}
+                    />
                   </Container3>
                 </Container2>
               ) : null}
@@ -102,7 +106,11 @@ const Question2: React.FC = () => {
                     </Container7>
                   </Container5>
                   <Container3 ml={25}>
-                    <AntDesign name="pluscircleo" size={24} color={colors.blackFont} />
+                    <AntDesign
+                      name="pluscircleo"
+                      size={24}
+                      color={colors.blackFont}
+                    />
                   </Container3>
                 </Container2>
               ) : null}
@@ -132,7 +140,11 @@ const Question2: React.FC = () => {
                     </Container7>
                   </Container5>
                   <Container3 ml={25}>
-                    <AntDesign name="pluscircleo" size={24} color={colors.blackFont} />
+                    <AntDesign
+                      name="pluscircleo"
+                      size={24}
+                      color={colors.blackFont}
+                    />
                   </Container3>
                 </Container2>
               ) : null}
@@ -162,7 +174,11 @@ const Question2: React.FC = () => {
                     </Container7>
                   </Container5>
                   <Container3 ml={25}>
-                    <AntDesign name="pluscircleo" size={24} color={colors.blackFont} />
+                    <AntDesign
+                      name="pluscircleo"
+                      size={24}
+                      color={colors.blackFont}
+                    />
                   </Container3>
                 </Container2>
               ) : null}
@@ -192,7 +208,11 @@ const Question2: React.FC = () => {
                     </Container7>
                   </Container5>
                   <Container3 ml={25}>
-                    <AntDesign name="pluscircleo" size={24} color={colors.blackFont} />
+                    <AntDesign
+                      name="pluscircleo"
+                      size={24}
+                      color={colors.blackFont}
+                    />
                   </Container3>
                 </Container2>
               ) : null}
@@ -222,7 +242,11 @@ const Question2: React.FC = () => {
                     </Container7>
                   </Container5>
                   <Container3 ml={25}>
-                    <AntDesign name="pluscircleo" size={24} color={colors.blackFont} />
+                    <AntDesign
+                      name="pluscircleo"
+                      size={24}
+                      color={colors.blackFont}
+                    />
                   </Container3>
                 </Container2>
               ) : null}
@@ -231,7 +255,9 @@ const Question2: React.FC = () => {
         ) : null}
         <Container4>
           <ContainerButton>
-            <NavigationButton onPress={() => navigation.navigate("Question3")} />
+            <NavigationButton
+              onPress={() => navigation.navigate("Question3")}
+            />
           </ContainerButton>
         </Container4>
       </Container>

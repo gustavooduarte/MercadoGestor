@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import Ripple from "react-native-material-ripple";
 
 import { colors, fonts, metrics } from "../../styles";
 
@@ -37,7 +38,7 @@ export const ContainerFlat = styled.View.attrs({
 })`
   border-radius: 25px;
   background-color: ${colors.white};
-  height: 170px;
+  height: 300px;
 `;
 
 interface IImage {
@@ -102,4 +103,22 @@ export const ContainerText = styled.View`
   width: 100%;
   align-items: flex-start;
   margin: 10px;
+`;
+interface IRipple {
+  bc?: string;
+}
+export const ContainerTag = styled(Ripple)<IRipple>`
+  padding: ${metrics.padding}px;
+  border-bottom-width: 1;
+  border-bottom-color: ${(props) => props.bc || colors.black};
+`;
+interface ITextTag {
+  cl?: string;
+}
+export const TextTag = styled.Text<ITextTag>`
+  font-size: ${fonts.regular}px;
+  color: ${(props) => props.cl || colors.primary};
+`;
+export const ContainerRow = styled.View`
+  flex-direction: row;
 `;
