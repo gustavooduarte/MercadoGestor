@@ -26,11 +26,11 @@ const Finish: React.FC = () => {
       </ContainerIcon>
       <ContainerInfo>
         <TextLabel>Pronto!</TextLabel>
-        <TextInfo>Seu Perfil está habilitado para uso da aplicação.</TextInfo>
+        <TextInfo>Seu perfil está habilitado para uso da aplicação.</TextInfo>
       </ContainerInfo>
       <ContainerButton>
         <DefaultButton
-          label="Meu Gestor Financeiro"
+          label="Continuar"
           onPress={() =>
             navigation.reset({
               index: 0,

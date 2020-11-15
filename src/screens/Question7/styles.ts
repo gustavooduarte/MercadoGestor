@@ -13,7 +13,7 @@ export const Container = styled.View`
 
 export const ContainerTitle = styled.View`
   justify-content: center;
-  bottom: 10px;
+   margin-bottom: 10px;
 `;
 
 export const ContainerInfo = styled.View`
@@ -26,9 +26,8 @@ export const ContainerInfo = styled.View`
 export const ContainerButton = styled.View`
   justify-content: center;
   background-color: ${colors.white};
-  position: absolute;
-  bottom: ${metrics.padding}px;
-  right: ${metrics.padding}px;
+  align-self: flex-end;
+  top: ${metrics.padding}px;
   width: 30%;
 `;
 
@@ -37,6 +36,7 @@ export const ContainerImage = styled.View`
   align-content: center;
   margin-top: ${metrics.padding}px;
   margin-bottom: ${metrics.padding}px;
+  margin-left: ${-metrics.padding}px;
 `;
 
 export const Title = styled.Text`

@@ -32,7 +32,7 @@ const Question8: React.FC = () => {
     <ScrollView>
       <Container>
         <ContainerTitle>
-          <Title>Quais seus objetivos nesse momento?</Title>
+          <Title>Quais são seus objetivos neste momento?</Title>
         </ContainerTitle>
         <DefaultCheckList
           label="Melhorar investimentos"
@@ -94,7 +94,7 @@ const Question8: React.FC = () => {
           onPress={() => setCheck12(!check12)}
           valueSelected={check12}
         />
-        {check6 ? <DefaultInput /> : null}
+        {check12 ? <DefaultInput /> : null}
 
         <ContainerButton>
           <NavigationButton onPress={() => navigation.navigate("Finish")} />

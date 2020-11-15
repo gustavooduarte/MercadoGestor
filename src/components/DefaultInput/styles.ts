@@ -26,12 +26,12 @@ export const Container = styled.View`
 `;
 
 export const TextLabel = styled.Text`
-  color: ${colors.black};
+  color: ${colors.blackFont};
   font-size: ${fonts.fontSearchInput}px;
   margin-left: 9px;
 `;
 
 export const Text = styled.Text`
-  color: ${colors.black};
+  color: ${colors.blackFont};
   font-size: ${fonts.regular}px;
 `;

@@ -7,6 +7,7 @@ export default {
   halfPadding: 8,
   halfMargin: 8,
   tabBarHeight: 50,
+  DistTitleToInputs: 40,
   DistBottom: 20,
   DistLeft: 20,
   screenWidth: Math.round(Dimensions.get("window").width),

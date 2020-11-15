@@ -18,9 +18,7 @@ export const ContainerTitle = styled.View`
 export const ContainerButton = styled.View`
   justify-content: center;
   background-color: ${colors.white};
-  position: absolute;
-  bottom: ${metrics.padding}px;
-  right: ${metrics.padding}px;
+  align-self: flex-end;
   width: 30%;
 `;
 

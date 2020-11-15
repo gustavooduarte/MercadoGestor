@@ -28,7 +28,7 @@ export const ContainerInfo = styled.View`
   justify-content: center;
   background-color: ${colors.white};
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 `;
 
 export const ContainerButton = styled.View`
@@ -51,6 +51,7 @@ export const TextInfo = styled.Text`
   font-size: ${fonts.small}px;
   color: ${colors.blackFont};
   text-align: center;
+  margin-top: 10px;
 `;
 
 export const TextBackLabel = styled(TextInfo as any)`

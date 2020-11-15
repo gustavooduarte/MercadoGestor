@@ -13,15 +13,13 @@ export const Container = styled.View`
 
 export const ContainerTitle = styled.View`
   justify-content: center;
-  bottom: 60px;
+  margin-bottom: 20px;
 `;
 
 export const ContainerButton = styled.View`
   justify-content: center;
   background-color: ${colors.white};
-  position: absolute;
-  bottom: ${metrics.padding}px;
-  right: ${metrics.padding}px;
+  align-self: flex-end;
   width: 30%;
 `;
 

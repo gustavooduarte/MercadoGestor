@@ -26,13 +26,13 @@ const Question7: React.FC = () => {
       <Container>
         <ContainerTitle>
           <Title>
-            Vamos falar um pouco sobre a seua reserva de emergência...
+            Vamos falar um pouco sobre a sua reserva de emergência...
           </Title>
         </ContainerTitle>
         <ContainerInfo>
           <TextInfo>
-            Reserva de emergências servem para ajudar em momentos difíceis, o
-            ideal é você sempre ter um dinheiro guardado para caso for demitido,
+            As reservas de emergência servem para ajudar em momentos difíceis, o
+            ideal é você sempre ter um dinheiro guardado para caso for demitido
             ou ter gastos inesperados com saúde, acidentes, entre outros
             imprevistos.
           </TextInfo>
@@ -43,19 +43,19 @@ const Question7: React.FC = () => {
         <ContainerInfo>
           <TextInfo>
             A recomendação é que você tenha uma reserva de 6 meses do seu
-            salário caso for um profissional contrato e caso for um profissional
-            liberal, é recomendado uma reserva de 1 ano.
+            salário caso for um profissional contrato e 1 ano se for um profissional
+            liberal.
           </TextInfo>
         </ContainerInfo>
 
         <DefaultRadioList
-          label="Você tem uma reserva de emergẽncia?"
+          label="Você tem uma reserva de emergência?"
           setFlag={() => setRadioSelect(!radioSelect)}
         />
 
         <ContainerInfo>
           <TextInfoFooter>
-            Juntos vamos fazer um fundo de emergência, para que possa dormir
+            Juntos vamos fazer um fundo de emergência, para que você possa dormir
             tranquilo(a).
           </TextInfoFooter>
         </ContainerInfo>

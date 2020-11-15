@@ -13,7 +13,7 @@ export const Container = styled.View`
 `;
 
 export const TextLabel = styled.Text`
-  color: ${colors.black};
+  color: ${colors.blackFont};
   font-size: ${fonts.fontSearchInput}px;
   margin-left: 10px;
   margin-bottom: 10px;

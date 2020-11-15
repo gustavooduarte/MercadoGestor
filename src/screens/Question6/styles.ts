@@ -8,18 +8,18 @@ export const Container = styled.View`
   justify-content: center;
   background-color: ${colors.white};
   width: 100%;
+  min-height: ${metrics.screenHeight}px;
 `;
 
 export const ContainerTitle = styled.View`
   justify-content: center;
+   margin-bottom: ${metrics.DistTitleToInputs}px;
 `;
 
 export const ContainerButton = styled.View`
   justify-content: center;
   background-color: ${colors.white};
-  position: absolute;
-  bottom: ${metrics.padding}px;
-  right: ${metrics.padding}px;
+  align-self: flex-end;
   width: 30%
 `;
 

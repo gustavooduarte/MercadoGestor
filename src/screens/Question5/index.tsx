@@ -14,6 +14,7 @@ import DefaultCheckList from "../../components/DefaultCheckList";
 import DefaultInput from "../../components/DefaultInput";
 import { useNavigation } from "@react-navigation/native";
 
+
 const Question5: React.FC = () => {
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -23,9 +24,10 @@ const Question5: React.FC = () => {
   const [check6, setCheck6] = useState(false);
   const navigation = useNavigation();
   return (
+    <ScrollView>
     <Container>
       <ContainerTitle>
-        <Title>O que compõem suas contas não essenciais?</Title>
+        <Title>Quais são suas contas não essenciais?</Title>
       </ContainerTitle>
       <DefaultCheckList
         label="Fast Food"
@@ -57,12 +59,13 @@ const Question5: React.FC = () => {
         onPress={() => setCheck6(!check6)}
         valueSelected={check6}
       />
-      {check6 ? <DefaultInput label="Remover Label" /> : null}
+      {check6 ? <DefaultInput /> : null}
 
       <ContainerButton>
         <NavigationButton onPress={() => navigation.navigate("Question6")} />
       </ContainerButton>
     </Container>
+    </ScrollView>
   );
 };
 

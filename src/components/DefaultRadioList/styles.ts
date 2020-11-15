@@ -25,14 +25,14 @@ interface ITitle {
   ml?: number;
 }
 export const TextTitle = styled.Text<ITitle>`
-  color: ${colors.black};
+  color: ${colors.blackFont};
   font-size: ${(props) => props.fs || fonts.regular}px;
   margin-bottom: ${metrics.DistBottom}px;
   margin-left: ${(props) => props.ml || 1}px;
   text-align: ${(props) => props.ta || "center"};
 `;
 export const Text = styled.Text`
-  color: ${colors.black};
+  color: ${colors.blackFont};
   font-size: ${fonts.regular}px;
   margin-left: 10px;
 `;

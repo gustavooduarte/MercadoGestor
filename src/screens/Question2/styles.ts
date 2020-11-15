@@ -12,16 +12,18 @@ export const Container = styled.View`
 
 export const ContainerButton = styled.View`
   background-color: ${colors.white};
+  align-self: flex-end;
   width: 30%;
 `;
 
 export const Container2 = styled.View`
   width: 100%;
 `;
+
 export const Container4 = styled.View`
-  width: 100%;
-  align-items: flex-end;
+  
 `;
+
 interface IContainer3 {
   ml?: number;
 }
