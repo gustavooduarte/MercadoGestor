@@ -60,22 +60,14 @@ const Home: React.FC = () => {
         <ContainerBacground>
           <ContainerMainInfo>
             <ContainerFlexStart>
-              <TitleLabel>
-                Aqui está nossa sugestão de gerenciamento para você
-              </TitleLabel>
+              <TitleLabel>Veja como está o uso do seu salário</TitleLabel>
             </ContainerFlexStart>
-
-            <ContainerFlexStart>
-              <LabelInfo>Sugestão para seu salário: </LabelInfo>
-            </ContainerFlexStart>
-
             <ContainerObjectives>
               <Chart data={data} width={screenWidth} />
             </ContainerObjectives>
-
-            <ContainerFlexStart>
+            <ContainerAlignCenter>
               <TitleLabel>Dinheiro guardado para o seu sonho</TitleLabel>
-            </ContainerFlexStart>
+            </ContainerAlignCenter>
             <ContainerAlignCenter>
               <TitlePrice>R$ 280,00</TitlePrice>
             </ContainerAlignCenter>

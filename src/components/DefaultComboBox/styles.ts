@@ -20,9 +20,9 @@ export const TextLabel = styled.Text`
 `;
 
 export const ContainerComboBox = styled.View`
-  borderWidth: 2px;
   margin-left: 10px;
-  width: 141px;
-  borderRadius: 10px;
-  borderColor: ${colors.lightGray}
+  width: 100%;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: ${colors.lightGray};
 `;
