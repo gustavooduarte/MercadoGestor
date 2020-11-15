@@ -122,6 +122,7 @@ interface ITextTag {
 export const TextTag = styled.Text<ITextTag>`
   font-size: ${fonts.regular}px;
   color: ${(props) => props.cl || colors.primary};
+  
 `;
 
 export const TextLabel = styled.Text`

@@ -94,17 +94,17 @@ const Start: React.FC = () => {
               onPress={() => {
                 setChoice(1);
               }}
-              bc={colors.primary}
+              bc={choice === 1 ? colors.primary : "#FFF"}
             >
               <TextTag cl={choice === 1 ? colors.primary : colors.lightGray}>
-                Essencial
+                Essenciais
               </TextTag>
             </ContainerTag>
             <ContainerTag
               onPress={() => {
                 setChoice(2);
               }}
-              bc={colors.primary}
+              bc={choice === 2 ? "#F48C37" : "#FFF"}
             >
               <TextTag cl={choice === 2 ? "#F48C37" : colors.lightGray}>
                 Não Essenciais
