@@ -30,9 +30,9 @@ A proposta da nossa solução é a funcionalidade Mercado Gestor que seria integ
 O Mercado Gestor permitirá que o usuário: 
 * Aprenda e realize o controle financeiro de modo simples e eficiente;
 * Gerencie seu saldo;
-* Receber dicas sobre finanças;
-* Definir objetivos financeiros;
-* Receber classificações das compras realizadas através do Mercado Pago, entre compras Essenciais e Não Essenciais definidas previamente pelo usuário;
+* Receba dicas sobre finanças;
+* Defina objetivos financeiros;
+* Receba classificações das compras realizadas através do Mercado Pago, entre compras Essenciais e Não Essenciais definidas previamente pelo usuário;
 * Seja auxiliado a construir um fundo de emergência com o rendimento maior que a poupança para futuros imprevistos financeiros.
 
 ## Como executar o projeto
