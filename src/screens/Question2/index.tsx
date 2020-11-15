@@ -11,7 +11,6 @@ import {
   Container5,
   Container6,
   Container7,
-  Container8,
 } from "./styles";
 
 import NavigationButton from "../../components/NavigationButton";
