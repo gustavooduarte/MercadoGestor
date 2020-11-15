@@ -55,7 +55,20 @@ export const ContainerStatus = styled.View`
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  width: 100%;
 `;
+
+export const ContainerCDI = styled.View`
+  justify-content: flex-end;
+  flex-direction: row;
+  width:100%;
+  border-top-width: 1px;
+`;
+
+export const ContainerIcon = styled.View`
+  align-self: flex-end;
+`;
+
 
 export const TitlePrice = styled.Text`
   font-size: 40px;
@@ -74,4 +87,11 @@ export const LabelInfo = styled(TitlePrice as any)`
 export const LabelInfoStatus = styled(TitlePrice as any)`
   font-size: ${fonts.regular}px;
   color: ${colors.white};
+`;
+
+export const LabelCDI = styled(TitlePrice as any)`
+  padding-right: 20px;
+  flex: 1;
+  text-align: justify;
+  font-size: ${fonts.small}px;
 `;
