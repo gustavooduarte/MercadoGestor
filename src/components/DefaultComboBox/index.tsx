@@ -6,9 +6,10 @@ import { Container, ContainerComboBox } from "./styles";
 
 interface IProps {
   items: Array<{ id: string; itemLabel: string }>;
+  onChange(item: string): void;
 }
 
-const DefaultComboBox: React.FC<IProps> = ({ items }) => {
+const DefaultComboBox: React.FC<IProps> = ({ items, onChange }) => {
   const [selectedItem, setSelectedItem] = useState("Selecione");
 
   return (
@@ -16,7 +17,10 @@ const DefaultComboBox: React.FC<IProps> = ({ items }) => {
       <ContainerComboBox>
         <Picker
           selectedValue={selectedItem}
-          onValueChange={(itemValue) => setSelectedItem(itemValue.toString())}
+          onValueChange={(itemValue) => {
+            setSelectedItem(itemValue.toString());
+            onChange(itemValue.toString());
+          }}
         >
           {items.map((item, index) => {
             return (

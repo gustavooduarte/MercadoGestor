@@ -4,30 +4,28 @@ import { ScrollView } from "react-native";
 import {
   Container,
   TitleLabel,
-  TitlePrice,
   LabelInfo,
-  LabelInfoStatus,
   ContainerFlexStart,
-  ContainerAlignCenter,
   ContainerObjectives,
   ContainerBacground,
   ContainerMainInfo,
   ContainerAlignRow,
-  ContainerStatus,
 } from "./styles";
 import ComboBox from "../../components/DefaultComboBox";
 
+const DATA = [
+  {
+    id: "1",
+    itemLabel: "Viajar",
+  },
+  {
+    id: "2",
+    itemLabel: "Celular",
+  },
+];
+
 const FinancialProjection: React.FC = () => {
-  const DATA = [
-    {
-      id: "1",
-      itemLabel: "Viajar",
-    },
-    {
-      id: "2",
-      itemLabel: "Celular",
-    },
-  ];
+  const [isSelected, setIsSelected] = useState("Viajar");
   return (
     <ScrollView>
       <Container>
@@ -37,12 +35,16 @@ const FinancialProjection: React.FC = () => {
               <TitleLabel>Projetando seus objetivos</TitleLabel>
             </ContainerFlexStart>
             <ContainerFlexStart ml={-25} mb={7}>
-              <ComboBox items={DATA} />
+              <ComboBox items={DATA} onChange={(item) => setIsSelected(item)} />
             </ContainerFlexStart>
             <ContainerObjectives>
               <ContainerAlignRow>
-                <LabelInfo>1º Viajar: </LabelInfo>
-                <LabelInfo>R$ 3.500,00</LabelInfo>
+                <LabelInfo>
+                  {isSelected === "Viajar" ? "1º Viajar: " : "2º Celular: "}
+                </LabelInfo>
+                <LabelInfo>
+                  {isSelected === "Viajar" ? "R$ 1.500,00" : "R$ 2.500,00"}
+                </LabelInfo>
               </ContainerAlignRow>
             </ContainerObjectives>
             <ContainerFlexStart mb={7}>
@@ -53,7 +55,10 @@ const FinancialProjection: React.FC = () => {
                 <LabelInfo>Duração: 3 anos</LabelInfo>
               </ContainerAlignRow>
               <ContainerAlignRow>
-                <LabelInfo>Total a pagar: R$ 4.350,00</LabelInfo>
+                <LabelInfo>
+                  Total a pagar:{" "}
+                  {isSelected === "Viajar" ? "R$ 1.790,00" : "R$ 2.980,00"}
+                </LabelInfo>
               </ContainerAlignRow>
             </ContainerObjectives>
             <ContainerFlexStart mb={7}>
@@ -64,7 +69,10 @@ const FinancialProjection: React.FC = () => {
                 <LabelInfo>Duração: 3 anos</LabelInfo>
               </ContainerAlignRow>
               <ContainerAlignRow>
-                <LabelInfo>Total a pagar: R$ 3.850,00</LabelInfo>
+                <LabelInfo>
+                  Total a pagar:{" "}
+                  {isSelected === "Viajar" ? "R$ 1.630,00" : "R$ 2.720,00"}
+                </LabelInfo>
               </ContainerAlignRow>
             </ContainerObjectives>
           </ContainerMainInfo>

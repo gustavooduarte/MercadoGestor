@@ -43,8 +43,8 @@ const Question7: React.FC = () => {
         <ContainerInfo>
           <TextInfo>
             A recomendação é que você tenha uma reserva de 6 meses do seu
-            salário caso for um profissional contrato e 1 ano se for um profissional
-            liberal.
+            salário caso for um profissional contrato e 1 ano se for um
+            profissional liberal.
           </TextInfo>
         </ContainerInfo>
 
@@ -55,8 +55,8 @@ const Question7: React.FC = () => {
 
         <ContainerInfo>
           <TextInfoFooter>
-            Juntos vamos fazer um fundo de emergência, para que você possa dormir
-            tranquilo(a).
+            Juntos vamos fazer um fundo de emergência, para que você possa
+            dormir tranquilo(a).
           </TextInfoFooter>
         </ContainerInfo>
 

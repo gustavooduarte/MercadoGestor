@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ScrollView } from "react-native";
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign } from "@expo/vector-icons";
 
 import {
   Container,
@@ -17,7 +17,7 @@ import {
   ContainerStatus,
   ContainerCDI,
   LabelCDI,
-  ContainerIcon
+  ContainerIcon,
 } from "./styles";
 
 import { useNavigation } from "@react-navigation/native";
@@ -62,7 +62,7 @@ const FinancialReserve: React.FC = () => {
               <TitleLabel>Seu fundo de emergência</TitleLabel>
             </ContainerFlexStart>
             <ContainerAlignCenter>
-              <TitlePrice>R$ 20.000,00</TitlePrice>
+              <TitlePrice>R$ 0,00</TitlePrice>
             </ContainerAlignCenter>
             <ContainerCDI>
               <LabelCDI>

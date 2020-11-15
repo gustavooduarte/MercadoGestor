@@ -60,10 +60,10 @@ const Home: React.FC = () => {
               <Chart data={data} width={screenWidth} />
             </ContainerObjectives>
             <ContainerAlignCenter>
-              <TitleLabel>Dinheiro guardado para o seu sonho</TitleLabel>
+              <TitleLabel>Dinheiro guardado para seus objetivos</TitleLabel>
             </ContainerAlignCenter>
             <ContainerAlignCenter>
-              <TitlePrice>R$ 280,00</TitlePrice>
+              <TitlePrice>R$ 1080,00</TitlePrice>
             </ContainerAlignCenter>
             <ContainerFlexStart>
               <LabelInfo>

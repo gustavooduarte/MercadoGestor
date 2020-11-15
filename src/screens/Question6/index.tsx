@@ -9,22 +9,6 @@ import DefaultInput from "../../components/DefaultInput";
 import { ScrollView } from "react-native";
 
 const Question5: React.FC = () => {
-  const itemsTest = [
-    { id: "1", itemLabel: "Fast Food" },
-    {
-      id: "2",
-      itemLabel: "Lazer",
-    },
-    {
-      id: "3",
-      itemLabel: "Roupas",
-    },
-    {
-      id: "4",
-      itemLabel: "Beleza",
-    },
-  ];
-
   const [item1, setItem1] = useState({ itemLabel: "Fast Food", itemValue: "" });
   const [item2, setItem2] = useState({ itemLabel: "Lazer", itemValue: "" });
   const [item3, setItem3] = useState({ itemLabel: "Roupas", itemValue: "" });
