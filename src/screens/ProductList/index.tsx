@@ -8,8 +8,7 @@ import {
   ContainerFlat,
   TextFlat,
   ContainerImage,
-  Text,
-  ContainerText,
+  TextLabel,
   ContainerBacground,
   ContainerMainInfo,
   ContainerTag,
@@ -18,100 +17,102 @@ import {
 } from "./styles";
 import { colors } from "../../styles";
 
+const DATA_ESSENCIAIS = [
+  {
+    id: "1",
+    label: "Conta de luz",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "2",
+    label: "Conta de luz",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "3",
+    label: "Conta de luz",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "4",
+    label: "Conta de luz",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "5",
+    label: "Conta de luz",
+    value: "86,70",
+    data: "15 de junho",
+  },
+];
+const DATA_NAO_ESSENCIAIS = [
+  {
+    id: "1",
+    label: "Fast food",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "2",
+    label: "Fast food",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "3",
+    label: "Fast food",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "4",
+    label: "Fast food",
+    value: "86,70",
+    data: "15 de junho",
+  },
+  {
+    id: "5",
+    label: "Fast food",
+    value: "86,70",
+    data: "15 de junho",
+  },
+];
+
 const Start: React.FC = () => {
   const [choice, setChoice] = useState<number>(1);
-  const [choiceColor, setChoiceColor] = useState<string>(colors.primary);
-  const DATA_ESSENCIAIS = [
-    {
-      id: "1",
-      label: "Conta de luz",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "2",
-      label: "Conta de luz",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "3",
-      label: "Conta de luz",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "4",
-      label: "Conta de luz",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "5",
-      label: "Conta de luz",
-      value: "86,70",
-      data: "15 de junho",
-    },
-  ];
-  const DATA_NAO_ESSENCIAIS = [
-    {
-      id: "1",
-      label: "Fast food",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "2",
-      label: "Fast food",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "3",
-      label: "Fast food",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "4",
-      label: "Fast food",
-      value: "86,70",
-      data: "15 de junho",
-    },
-    {
-      id: "5",
-      label: "Fast food",
-      value: "86,70",
-      data: "15 de junho",
-    },
-  ];
   return (
     <Container>
       <ContainerBacground>
         <ContainerMainInfo>
+          <TextLabel>Suas Atividades: </TextLabel>
           <ContainerRow>
             <ContainerTag
               onPress={() => {
                 setChoice(1);
               }}
-              bc={choiceColor}
+              bc={colors.primary}
             >
-              <TextTag>Essencial</TextTag>
+              <TextTag cl={choice === 1 ? colors.primary : colors.lightGray}>
+                Essencial
+              </TextTag>
             </ContainerTag>
             <ContainerTag
               onPress={() => {
                 setChoice(2);
               }}
-              bc={choiceColor}
+              bc={colors.primary}
             >
-              <TextTag cl="#F48C37">Não Essencial</TextTag>
+              <TextTag cl={choice === 2 ? "#F48C37" : colors.lightGray}>
+                Não Essenciais
+              </TextTag>
             </ContainerTag>
           </ContainerRow>
           {choice === 1 && (
             <>
-              <ContainerText>
-                <Text cl={colors.primary}>Essenciais</Text>
-              </ContainerText>
               <ContainerFlat>
                 <FlatList
                   data={DATA_ESSENCIAIS}
@@ -140,9 +141,6 @@ const Start: React.FC = () => {
 
           {choice === 2 && (
             <>
-              <ContainerText>
-                <Text cl="#F48C37">Não essencial</Text>
-              </ContainerText>
               <ContainerFlat>
                 <FlatList
                   data={DATA_NAO_ESSENCIAIS}

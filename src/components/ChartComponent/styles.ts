@@ -4,7 +4,7 @@ import { colors, metrics, fonts } from "../../styles";
 
 export const Container = styled.View`
   background-color: ${colors.transparent};
-  padding: ${metrics.padding}px;
+  /* padding: ${metrics.padding}px; */
   border-radius: 4px;
   align-items: center;
   justify-content: center;

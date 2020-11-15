@@ -5,6 +5,7 @@ import { colors, metrics } from "../../styles";
 export const Container = styled.View`
   flex: 1;
   padding: ${metrics.padding}px;
+  justify-content: center;
   background-color: ${colors.white};
   width: 100%;
   min-height: ${metrics.screenHeight}px;
@@ -20,9 +21,7 @@ export const Container2 = styled.View`
   width: 100%;
 `;
 
-export const Container4 = styled.View`
-  
-`;
+export const Container4 = styled.View``;
 
 interface IContainer3 {
   ml?: number;

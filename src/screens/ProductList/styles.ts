@@ -104,21 +104,32 @@ export const ContainerText = styled.View`
   align-items: flex-start;
   margin: 10px;
 `;
+
 interface IRipple {
   bc?: string;
 }
+
 export const ContainerTag = styled(Ripple)<IRipple>`
   padding: ${metrics.padding}px;
-  border-bottom-width: 1;
+  border-bottom-width: 1px;
   border-bottom-color: ${(props) => props.bc || colors.black};
 `;
+
 interface ITextTag {
   cl?: string;
 }
+
 export const TextTag = styled.Text<ITextTag>`
   font-size: ${fonts.regular}px;
   color: ${(props) => props.cl || colors.primary};
 `;
+
+export const TextLabel = styled.Text`
+  font-size: ${fonts.big}px;
+  color: ${colors.blackFont};
+`;
+
 export const ContainerRow = styled.View`
   flex-direction: row;
+  align-self: center;
 `;

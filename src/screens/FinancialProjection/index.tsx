@@ -33,10 +33,12 @@ const FinancialProjection: React.FC = () => {
       <Container>
         <ContainerBacground>
           <ContainerMainInfo>
-            <ContainerFlexStart>
+            <ContainerFlexStart mb={7}>
               <TitleLabel>Projetando seus objetivos</TitleLabel>
             </ContainerFlexStart>
-            <ComboBox items={DATA} />
+            <ContainerFlexStart ml={-25} mb={7}>
+              <ComboBox items={DATA} />
+            </ContainerFlexStart>
             <ContainerObjectives>
               <ContainerAlignRow>
                 <LabelInfo>1º Viajar: </LabelInfo>
