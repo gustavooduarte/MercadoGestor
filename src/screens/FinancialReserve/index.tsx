@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ScrollView } from "react-native";
+import { AntDesign } from '@expo/vector-icons';
 
 import {
   Container,
@@ -14,6 +15,9 @@ import {
   ContainerMainInfo,
   ContainerAlignRow,
   ContainerStatus,
+  ContainerCDI,
+  LabelCDI,
+  ContainerIcon
 } from "./styles";
 
 import { useNavigation } from "@react-navigation/native";
@@ -37,11 +41,11 @@ const FinancialReserve: React.FC = () => {
             <ContainerObjectives>
               <ContainerAlignRow>
                 <LabelInfo>1º Viajar: </LabelInfo>
-                <LabelInfo>R$3.500,00</LabelInfo>
+                <LabelInfo>R$ 1.500,00</LabelInfo>
               </ContainerAlignRow>
               <ContainerAlignRow>
                 <LabelInfo>2º Celular: </LabelInfo>
-                <LabelInfo>R$1.500,00</LabelInfo>
+                <LabelInfo>R$ 2.500,00</LabelInfo>
               </ContainerAlignRow>
             </ContainerObjectives>
             <ContainerFlexStart>
@@ -51,7 +55,7 @@ const FinancialReserve: React.FC = () => {
             </ContainerFlexStart>
             <ContainerAlignCenter>
               <LabelInfo>
-                Faltam R$420,00 para viajarmos, estamos quase lá!
+                Faltam R$ 420,00 para viajarmos, estamos quase lá!
               </LabelInfo>
             </ContainerAlignCenter>
             <ContainerFlexStart>
@@ -60,6 +64,14 @@ const FinancialReserve: React.FC = () => {
             <ContainerAlignCenter>
               <TitlePrice>R$ 20.000,00</TitlePrice>
             </ContainerAlignCenter>
+            <ContainerCDI>
+              <LabelCDI>
+                Dá uma olhada como seu dinheiro está rendendo no CDI
+              </LabelCDI>
+              <ContainerIcon>
+                <AntDesign name="right" size={20} color="black" />
+              </ContainerIcon>
+            </ContainerCDI>
           </ContainerMainInfo>
         </ContainerBacground>
       </Container>
